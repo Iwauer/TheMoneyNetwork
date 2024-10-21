@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e5f5ff;
+    background-color: #e5f5ff; /* Light blue background */
     color: #333;
     overflow-x: hidden;
 }
@@ -11,7 +11,7 @@ body {
 header {
     background-color: transparent;
     color: white;
-    padding: 40px 0; /* Increase padding for more spacing */
+    padding: 20px;
     text-align: center;
     position: relative;
 }
@@ -19,18 +19,18 @@ header {
 header h1 {
     font-size: 2.5rem;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for better readability */
 }
 
 main {
-    padding: 30px 20px; /* Add more space between sections */
+    padding: 40px 20px; /* Adjust spacing here */
     text-align: center;
 }
 
 h2 {
-    color: black;
+    color: black; /* Change "Unlock Your Financial Future" to black */
     font-size: 2rem;
-    margin-bottom: 20px; /* Increase margin below the heading for more space */
+    margin-bottom: 15px; /* Slightly increase space between heading and content */
 }
 
 p {
@@ -39,7 +39,7 @@ p {
 }
 
 section {
-    margin-bottom: 50px; /* Add more space between sections */
+    margin-bottom: 40px;
 }
 
 /* Form Styling */
@@ -98,4 +98,17 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 40px;
+}
+
+/* Restoring cloud background as it was */
+body::before {
+    content: '';
+    background: url('54ADA154-77BC-44F2-B07B-2F0E4186050D.jpeg') no-repeat center top; /* Use your image link */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    z-index: -1;
 }
