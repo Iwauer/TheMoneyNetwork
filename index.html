@@ -3,84 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Money Network - Personal and Business Loans</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Money Network</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">The Money Network</div>
+        <h1>The Money Network</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Personal Loans</a></li>
                 <li><a href="#">Business Loans</a></li>
-                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="#">Apply Now</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Unlock Your Financial Future</h1>
-        <p>Flexible loan options to fit your needs.</p>
-        <a href="#apply" class="btn">Apply Now</a>
-    </section>
+    <main>
+        <section>
+            <h2>Unlock Your Financial Future</h2>
+            <p>Flexible loan options to fit your needs.</p>
+            <a href="#">Apply Now</a>
+        </section>
 
-    <section class="features">
-        <h2>Why Choose Us?</h2>
-        <div class="features-grid">
-            <div class="feature">
-                <h3>Competitive Rates</h3>
-                <p>We offer competitive interest rates that suit your financial needs.</p>
-            </div>
-            <div class="feature">
-                <h3>Fast Approval</h3>
-                <p>Get quick approval and access your funds fast.</p>
-            </div>
-            <div class="feature">
-                <h3>Flexible Repayment</h3>
-                <p>Repayment options designed to make it easy for you.</p>
-            </div>
-        </div>
-    </section>
+        <section>
+            <h2>Request Information on Loans</h2>
+            <form action="https://formspree.io/f/mbljllab" method="POST">
+                <div class="form-field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-    <section id="apply" class="apply-form">
-        <h2>Request Information on Loans</h2>
-        <form id="loanForm" action="https://formspree.io/f/mbljllab" method="POST">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="loanAmount">Desired Loan Amount</label>
-                <input type="number" id="loanAmount" name="loanAmount" required>
-            </div>
-            <div class="form-group">
-                <label>Loan Type</label>
-                <label><input type="radio" name="loanType" value="Personal Loan" required> Personal Loan</label>
-                <label><input type="radio" name="loanType" value="Business Loan" required> Business Loan</label>
-            </div>
-            <div class="form-group">
-                <label for="purpose">Purpose of Loan</label>
-                <textarea id="purpose" name="purpose" required></textarea>
-            </div>
-            <button type="submit">Request Information</button>
-        </form>
-        <p id="confirmationMessage"></p>
-    </section>
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="loan-amount">Desired Loan Amount</label>
+                    <input type="number" id="loan-amount" name="loan-amount" required>
+                </div>
+
+                <div class="form-field">
+                    <label>Loan Type</label>
+                    <input type="radio" id="personal" name="loan-type" value="Personal Loan" required>
+                    <label for="personal">Personal Loan</label>
+                    <input type="radio" id="business" name="loan-type" value="Business Loan" required>
+                    <label for="business">Business Loan</label>
+                </div>
+
+                <div class="form-field">
+                    <label for="purpose">Purpose of Loan</label>
+                    <input type="text" id="purpose" name="purpose" required>
+                </div>
+
+                <button type="submit">Request Information</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 The Money Network. All rights reserved. <br> Visit us at <a href="https://themoneynetwork.org">themoneynetwork.org</a></p>
+        <p>&copy; 2024 The Money Network. All rights reserved.</p>
     </footer>
 
+    <!-- Include the script.js file -->
     <script src="script.js"></script>
 </body>
 </html>
