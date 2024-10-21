@@ -25,15 +25,23 @@ header h1 {
 /* Style for the About Us button */
 nav a {
     position: absolute;
-    top: 10px;
+    top: 30px; /* Adjusted for desktop */
     left: 20px;
     color: white;
     font-size: 1rem;
     text-decoration: none;
 }
 
+/* Hover effect for the About Us button */
 nav a:hover {
     text-decoration: underline;
+}
+
+/* Mobile adjustments */
+@media only screen and (max-width: 600px) {
+    nav a {
+        top: 50px; /* Adjusted to prevent clipping into "The" on mobile */
+    }
 }
 
 main {
@@ -42,7 +50,7 @@ main {
 }
 
 h2 {
-    color: black; /* Keep "Unlock Your Financial Future" black */
+    color: black;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -115,10 +123,10 @@ footer {
     margin-top: 40px;
 }
 
-/* Cloud background (unchanged from your preferred version) */
+/* Cloud background (unchanged) */
 body::before {
     content: '';
-    background: url('54ADA154-77BC-44F2-B07B-2F0E4186050D.jpeg') no-repeat center top; /* Use your image link */
+    background: url('54ADA154-77BC-44F2-B07B-2F0E4186050D.jpeg') no-repeat center top; /* Cloud background */
     position: absolute;
     top: 0;
     left: 0;
