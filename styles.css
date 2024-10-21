@@ -23,14 +23,14 @@ header h1 {
 }
 
 main {
-    padding: 40px 20px; /* Adjust spacing here */
+    padding: 40px 20px; /* Restore padding */
     text-align: center;
 }
 
 h2 {
-    color: black; /* Change "Unlock Your Financial Future" to black */
+    color: black; /* Keep "Unlock Your Financial Future" black */
     font-size: 2rem;
-    margin-bottom: 15px; /* Slightly increase space between heading and content */
+    margin-bottom: 20px;
 }
 
 p {
@@ -74,7 +74,8 @@ form {
 }
 
 .form-field input[type="radio"] {
-    margin-right: 10px;
+    margin-right: 5px;
+    vertical-align: middle; /* Align the radio buttons correctly */
 }
 
 button {
@@ -100,10 +101,10 @@ footer {
     margin-top: 40px;
 }
 
-/* Restoring cloud background as it was */
+/* Cloud background (unchanged from your preferred version) */
 body::before {
     content: '';
-    background: url('54ADA154-77BC-44F2-B07B-2F0E4186050D.jpeg') no-repeat center top; /* Use your image link */
+    background: url('54ADA154-77BC-44F2-B07B-2F0E4186050D.jpeg') no-repeat center top; /* Cloud background */
     position: absolute;
     top: 0;
     left: 0;
@@ -111,4 +112,9 @@ body::before {
     height: 50%;
     background-size: cover;
     z-index: -1;
+}
+
+/* Fix the clipping issue for "Request Information on Loans" */
+h2.request-info {
+    margin-top: 30px; /* Add spacing above to avoid overlap with the background */
 }
