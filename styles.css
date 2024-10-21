@@ -23,14 +23,14 @@ header h1 {
 }
 
 main {
-    padding: 60px 20px;
+    padding: 40px 20px; /* Adjusted padding to move everything up */
     text-align: center;
 }
 
 h2 {
-    color: #00a3e5;
+    color: black; /* Change "Unlock Your Financial Future" to black */
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Adjusted margin for better alignment */
 }
 
 p {
